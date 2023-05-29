@@ -288,12 +288,12 @@ Module VC2Handler
                 End If
             Else
                 If i = 0 Then
-                    Console.WriteLine("  " & sessionDirectory(sessions(i))) ' Prefix the selected session with ">"
+                    Console.WriteLine("  " & sessionDirectory(sessions(i))) ' Prefix the selected session with nothing
                 Else
                     Console.ForegroundColor = ConsoleColor.Gray
                     Console.Write("  ")
                     Console.ForegroundColor = sessionColor ' Set the session name color
-                    Console.Write(sessionDirectory(sessions(i))) ' Prefix the selected session with ">"
+                    Console.Write(sessionDirectory(sessions(i))) ' Prefix the selected session with nothing
                     Console.ForegroundColor = ConsoleColor.Gray
                     Console.WriteLine()
                 End If
